@@ -1,0 +1,203 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#conteneur {
+    height: 100vh;
+    padding: 0;
+    background-color: white;
+    display: grid;
+    border: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 2fr 80px;
+    grid-template-areas:
+        "header header header header"
+        "main main main aside"
+        "footer footer footer footer";
+    margin: auto;
+}
+
+aside,
+footer {
+    padding: 1em;
+}
+
+header {
+    padding-top: 1em;
+    color: white;
+    grid-area: header;
+    background-color: black;
+}
+
+aside {
+    grid-area: aside;
+    font-size: small;
+}
+
+.PourOnePiece {
+    background-image: linear-gradient(45deg, rgb(245, 39, 159), rgb(106, 201, 245));
+}
+
+.PourHaikyuu {
+    background-color: orange;
+}
+
+.KB2 {
+    background-image: linear-gradient(45deg, turquoise, white);
+}
+
+main {
+    padding: 1em;
+    padding-top: 0;
+    font-size: larger;
+    grid-area: main;
+}
+
+article {
+    padding: 0;
+    margin: 0;
+}
+
+figure {
+    border: 1px solid black;
+    grid-area: figure;
+    text-align: center;
+    padding: 10px;
+    float: left;
+}
+
+img {
+    width: 450px;
+    height: 250px;
+    margin: auto;
+}
+
+footer {
+    grid-area: footer;
+    background-color: gray;
+    text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+figCaption {
+    font-style: italic;
+}
+
+body div header nav a:hover,
+body div header nav div a:hover {
+    background-color: rgb(33, 33, 199);
+}
+
+body div header nav a,
+body div header nav div a {
+    padding: 25px 15px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.droite {
+    float: right;
+}
+
+.columns {
+    column-count: 2;
+}
+
+.complément {
+    font-size: large;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.complément2 {
+    font-weight: bold;
+}
+
+.explication {
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+
+
+
+.KB2 p {
+    padding-bottom: 5px;
+}
+
+/* lien pas visité */
+.Lien1:link {
+    color: red;
+}
+
+/* lien visité */
+.Lien1:visited {
+    color: green;
+}
+
+/* curseur sur lien */
+.Lien1:hover {
+    color: hotpink;
+}
+
+/* lien selectionné */
+.Lien1:active {
+    color: blue;
+}
+
+.Lien2:hover {
+    color: purple;
+    font-size: 60px;
+}
+
+main article #souris {
+    background-color: green;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+main article #souris:hover {
+    background-color: blue;
+}
+
+div.gallerie, .gallerie2, .gallerie3 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+.gallerie-header {
+    padding-top: 220px;
+}
+
+div.gallerie:hover, .gallerie2:hover, .gallerie3:hover {
+    border: 1px solid #777;
+}
+
+div.gallerie img, .gallerie2 img, .gallerie3 img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+h2 {
+    display: block;
+}
+
+.gallerie2 img, .gallerie2 {
+    border-radius: 40px;
+}
+
+.gallerie3 img:hover {
+opacity: 0.5;
+}
